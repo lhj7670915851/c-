@@ -1,3 +1,4 @@
+// 以B为支架将所有盘子从A移到C盘
 #include<stdio.h>
 void Hanio (int n,char A,char B,char C){
     if(n==1)
@@ -9,6 +10,6 @@ void Hanio (int n,char A,char B,char C){
     }
 }
 int main(){
-    Hanio(3,'A','B','C');
+    Hanio(2,'A','B','C');
     return 0;
 }

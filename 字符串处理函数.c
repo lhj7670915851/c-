@@ -8,16 +8,17 @@ void main()
     // printf("%s\n",str);
     // puts(str);
 
-    char a[7]="China! ";
-    char b[8]="Chinese!";
-    // printf("sizeof(b)=%d\n",sizeof(b));
+    // char a[7]="China! ";
+    char b[10]="Chinese!";
+    printf("sizeof(b)=%d\n",sizeof(b));
     // printf("b=%s\n",b);
 
-    //  strlen-字符串长度函数
+    //  strlen-字符串长度函数,遇到\0停止输出字符串长度(刚好8个字符数组定义长至少为9因为还有\0)
+    //，sizeof读取到的是整个地址空间的长度
     printf("strlen(b)=%d\n",strlen(b));
 
     // //  strlwr-字符串转化小写函数
-    printf("strlwr(b)=%s\n",strlwr(b));
+    // printf("strlwr(b)=%s\n",strlwr(b));
 
     // //  strupr-字符串转换大写函数
     // printf("strupr(b)=%s\n",strupr(b));
