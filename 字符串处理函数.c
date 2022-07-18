@@ -10,7 +10,7 @@ void main()
 
     // char a[7]="China! ";
     char b[10]="Chinese!";
-    printf("sizeof(b)=%d\n",sizeof(b));
+    printf("sizeof(b)=%d\n",sizeof(b));     //输出变量b所占的字节数
     // printf("b=%s\n",b);
 
     //  strlen-字符串长度函数,遇到\0停止输出字符串长度(刚好8个字符数组定义长至少为9因为还有\0)

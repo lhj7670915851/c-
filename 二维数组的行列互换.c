@@ -1,3 +1,13 @@
+/**
+ * @file 二维数组的行列互换.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2022-07-17
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include<stdio.h>
 int main()
 {
@@ -10,7 +20,7 @@ int main()
         printf("\n");
     }
     int  b[3][2];
-    printf("ת�ú�ľ���\n");
+    printf("转置后的矩阵：\n");
     for(int i=0; i<3; i++)
     {
         for(int j=0; j<2; j++)
