@@ -5,38 +5,29 @@ int array(int n)
 {
     int i, j, no, num, max;
     int *mtrx;
-    if(n%2 == 0)  /*n是偶数，则加1使其变为奇数*/
-    {
+    if(n%2 == 0)  
         n=n+1;
-    }
     max=n*n;
-    mtrx=(int *)malloc(max+max);  /*为魔方阵分配内存*/
-    mtrx[n/2]=1;  /* 将1存入数组*/
-    i=0;  /*自然数1所在行*/
-    j=n/2;  /*自然数1所在列*/
-    /*从2开始确定每个数的存放位置*/
+    mtrx=(int *)malloc(max+max);  
+    mtrx[n/2]=1;  
+    i=0;  
+    j=n/2;  
     for(num=2; num<=max; num++)
     {
         i=i-1;
         j=j+1;
-        if((num-1)%n == 0)  /*当前数是n的倍数*/
+        if((num-1)%n == 0)  
         {
             i=i+2;
             j=j-1;
         }
-        if(i<0)  /*当前数在第0行*/
-        {
+        if(i<0) 
             i=n-1;
-        }
-        if(j>n-1)  /*当前数在最后一列，即n-1列*/
-        {
+        if(j>n-1) 
             j=0;
-        }
-        no=i*n+j;  /*找到当前数在数组中的存放位置*/
+        no=i*n+j; 
         mtrx[no]=num;
     }
-    /*打印生成的魔方阵*/
-    printf("生成的%d-魔方阵为:",n);
     no=0;
     for(i=0; i<n; i++)
     {
@@ -54,9 +45,7 @@ int array(int n)
 
 int main()
 {
-    int n;
-    printf("请输入n值:\n");
-    scanf("%d", &n);
-    array(n);  /*调用array函数*/
+    int n=3;
+    array(n); 
     return 0;
 }
