@@ -30,7 +30,7 @@ int main()
     do
     {
         printf("%d  %lf\n",p->num,p->score);
-        p=p->next;
+        p=p->next;  //相当于a.next指向b
     }while(p!=NULL);
     return 0;
 }

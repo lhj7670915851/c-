@@ -14,6 +14,7 @@ int main()
     int *p1,*p2,*p,max=3,min=5;
     p1=&max;
     p2=&min;
+    printf("max=%d,min=%d\n",*p1,*p2);
     if(max<min)
     {
         p=p1;

@@ -11,7 +11,7 @@
 #include<stdio.h>
 int main()
 {
-    int swap(int *x,int *y);
+    void swap(int *x,int *y);
     int *p1,*p2,*p3,a=5,b=45,c=12;
     p1=&a;
     p2=&b;
@@ -23,11 +23,11 @@ int main()
     return 0;
     
 }
-int swap(int *x,int *y)
+void swap(int *x,int *y)
 {
     int temp;
     temp=*x;
     *x=*y;
     *y=temp;
-    return 0;
+    // return 0;
 }
